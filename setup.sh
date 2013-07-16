@@ -2,9 +2,13 @@
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
 # for headless setup. 
 
+# Update system and install Python, g++, and make
+sudp apt-get update
+sudo apt-get install -y python-software-properties python g++ make
+sudo apt-get update
+
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
-sudo apt-get install -y git-core
 curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 # Load nvm and install latest production node
@@ -29,6 +33,18 @@ sudo apt-get install -y emacs24 emacs24-el emacs24-common-non-dfsg
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+# Install current bitstarter setup and node modules
+cd $HOME
+git clone https://github.com/gitkewl/bitstarter
+cd bitstarter
+npm install express
+npm install restler
+npm install csv
+npm install accounting
+npm install cheerio
+npm install commander
+cd $HOME
 
 # git pull and install dotfiles as well
 cd $HOME
