@@ -16,6 +16,14 @@ source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
 nvm use v0.10.12
 
+# Install various node modules
+npm install express
+npm install restler
+npm install csv
+npm install accounting
+npm install cheerio
+npm install commander
+
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
 npm install -g jshint
@@ -34,17 +42,9 @@ sudo apt-get install -y emacs24 emacs24-el emacs24-common-non-dfsg
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
-# Install current bitstarter setup and node modules
+# Install current bitstarter setup
 cd $HOME
 git clone https://github.com/gitkewl/bitstarter
-cd bitstarter
-npm install express
-npm install restler
-npm install csv
-npm install accounting
-npm install cheerio
-npm install commander
-cd $HOME
 
 # git pull and install dotfiles as well
 cd $HOME
@@ -60,4 +60,3 @@ ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
-
