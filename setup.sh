@@ -17,6 +17,7 @@ nvm install v0.10.12
 nvm use v0.10.12
 
 # Install various node modules
+cd $HOME
 npm install express
 npm install restler
 npm install csv
