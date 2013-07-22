@@ -16,15 +16,6 @@ source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
 nvm use v0.10.12
 
-# Install various node modules (global)
-cd $HOME
-npm install -g express
-npm install -g restler
-npm install -g csv
-npm install -g accounting
-npm install -g cheerio
-npm install -g commander
-
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
 npm install -g jshint
