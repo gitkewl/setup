@@ -3,7 +3,7 @@
 # for headless setup. 
 
 # Update system and install Python, g++, and make
-sudp apt-get update
+sudo apt-get update
 sudo apt-get install -y python-software-properties python g++ make
 sudo apt-get update
 
