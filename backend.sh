@@ -8,7 +8,7 @@ echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" | 
 sudo apt-get -y update
 
 # Install MongoDB
-sudo apt-get -y install mongodb-10gen
+sudo apt-get install mongodb-10gen
 
 #Start MongoDB
 sudo /etc/init.d/mongodb start
