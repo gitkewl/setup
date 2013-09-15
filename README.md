@@ -8,7 +8,7 @@ follows:
 cd $HOME
 sudo apt-get install -y git-core
 git clone https://github.com/gitkewl/setup
-./setup/frontend.sh 
+./setup/setup.sh 
 ```
 
 See also http://github.com/gitkewl/dotfiles
