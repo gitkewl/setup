@@ -9,6 +9,8 @@ cd $HOME
 sudo apt-get install -y git-core
 git clone https://github.com/gitkewl/setup
 ./setup/setup.sh 
+
+exit # then log back in to ensure proper setup
 ```
 
 See also http://github.com/gitkewl/dotfiles
